@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Builder</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="pageBuilder.js" async defer></script>
+</head>
+<body>
+    <div id="main">
+    <div id="pageBuilder">
+        <select id="elementOp">
+            <option value="Choose Your Element">Choose Your Element</option>
+            <option value="div">Div</option>
+            <option value="Span">span</option>
+            <option value="P">p</option>
+            <option value="h1">h1</option>
+            <option value="h2">h2</option>
+            <option value="h3">h3</option>
+        </select>
+    <label for="color">Element Color</label>
+    <input type="color" name="color" id="bgc">
+    <label for="width">Width</label>
+    <input type="text" id="width">
+    <label for="height">height</label>
+    <input type="text" id="height">
+    <label for="borderSize">Border Size</label>
+    <input type="text" id="borderSize">
+    <label for="borderStyle">Border Style</label>
+    <select id="borderStyle">
+        <option value="Solid">Solid</option>
+        <option value="dashed">dashed</option>
+        <option value="double">double</option>
+        <option value="dotted">dotted</option>
+    </select>
+    <label for="borderColor">Border Color</label>
+    <input type="color" id="borderColor">
+    <label for="borderSize">Border Radius</label>
+    <input type="text" id="borderRadius">
+    <label for="addText">Add Text</label>
+    <textarea id="addText" cols="30" rows="10"></textarea>
+    <label for="textColor">Text Color</label>
+    <input type="color" id="textColor">
+    <label for="textFont">Text Font</label>
+    <input type="text" id="textFont">
+    <label for="divMargin">Margin</label>
+    <input type="text" id="divMargin">
+    <label for="divPadding">Padding</label>
+    <input type="text" id="divPadding">
+    <label for="boxShadow">Box Shadow (Xpx Ypx color)</label>
+    <input type="text" id="boxShadow" placeholder="Ex: 5px 5px black">
+    <button id="add">ADD</button>
+    </div>
+    <div id="canvas"></div>
+    </div>
+</body>
+</html>

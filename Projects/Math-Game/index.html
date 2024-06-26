@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="mathGame.js" async defer></script>
+    <title>Math Game</title>
+</head>
+<body>
+    <div id="container">
+        <div id="selectGame" dir="rtl">
+            <label for="range">בחר טווח מספרים</label>
+            <select name="" id="range">
+                <option value="100">1 - 100</option>
+                <option value="1000">100 - 1000</option>
+                <option value="1500">1000 - 1500</option>
+            </select>
+            <label for="operator">בחר אופרטור</label>
+            <select name="operator" id="selectOperator">
+                <option value="minus">מינוס -</option>
+                <option value="Dual">כפול * </option>
+                <option value="plus">פלוס + </option>
+                <option value="division">לחלק / </option>
+            </select>
+            <br>
+            <button id="startGame">התחל לתרגל</button>
+        </div>
+<br>
+        <div id="calcDiv" dir="ltr">
+            <div id="num1" style="border: 1px solid black;"></div>
+            <div id="oper"></div>
+            <div id="num2" style="border: 1px solid black;"></div>
+            <div class="equal">=</div>
+            <input type="number" id="outcme" style="border: 1px solid black;"></input>
+            <button id="btn">חשב</button>
+        </div>
+    </div>
+
+
+</body>
+</html>

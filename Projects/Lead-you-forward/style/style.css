@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+#container{
+    width: 1920px;
+    height: 1080px;
+}
+.container-img{
+    height: 590px;
+}
+.container-form{
+    background-color: #1A1A1AD4;
+    width: 28vw;
+    height: 70vh;
+    position: absolute;
+    margin: 0 auto;
+    top: 170px;
+    padding: 20px;
+    right: 300px;
+}
+h1{
+    color: azure;
+    font-size: 30pt;
+    font-family: heebo,sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+p{
+color: azure;
+    font-size: 20pt;
+    font-family: heebo, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+#form{
+    height: 300px;
+    padding: 30px;
+    text-align: right;
+    color: #fff;
+}
+label{
+    font-size: 18pt;
+    font-weight: bold;
+    color: azure;
+    font-family: heebo ,sans-serif;
+}
+::placeholder{
+    color: grey;
+    font-size: 8pt;
+    opacity: 0.6;
+}
+input[type="text"]{
+    width: 400px;
+    font-weight: bold;
+    font-size: 16pt;
+    text-align: right;
+    height: 50px;
+    border: 1.2px solid #d31c75;
+    background-color: azure;
+}
+input[type="submit"]{
+    width: 160px;
+    height: 50px;
+    color: azure;
+    font: normal normal bold 22px/30px heebo;
+    font-weight: bold;
+    background-color: #d31c75;
+    text-align: center;
+    margin-top:25px ;
+    letter-spacing: 1px;
+    border: 1px;
+    
+}
+.img{
+    width: 100vw;
+        height: 50vh
+}
+@media(max-width:800px){
+    #container{
+        width: 370px;
+        height: 658px;
+        background-color: url(/Projects/Lead-you-forward/images/Path\ 15@2x.png);
+    }
+    .container-img{
+        height: 213px;
+    }
+    #bgc{
+        width: 370px;
+        height: 213px;
+        object-fit: cover;
+    }
+    .container-form{
+        background-color: #1A1A1AD4;
+        top: 15% ;
+        left: 10%;
+        width: 298px;
+        height: 441px;
+        text-align: right;
+        padding: 0;
+        }
+    h1{
+    font-size: 22pt;
+    }
+    p{
+        font-size: 15px;
+    }
+    #form{
+        width: 300px;
+        height: 300px;
+        text-align: right;
+        
+
+    }
+    label{
+        font-size: 16px;
+        text-align: right;
+    }
+    input[type="text"]{
+        width: 229px;
+        height: 27px;
+    }
+    input[type="submit"]{
+    
+        width: 76px;
+        height: 33px;
+        text-align: center;
+        font: normal normal bold 15px/20px Heebo;
+        color: #FFFFFF;
+        background: #D31C75 0% 0% no-repeat padding-box;
+    } 
+
+}
+

@@ -1,0 +1,47 @@
+#calcDiv{
+    background-color: blue;
+    width: 450px;
+    height: 40px;
+    display: flex;
+    flex-direction :row;  
+    margin: 0 auto; 
+}
+#selectGame{
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+#num1{
+    width: 70px;
+    height: 35px;
+    margin-right: 1rem;
+    font-size: 30px;
+}
+#oper{
+    width: 35px;
+    height: 35px;
+}
+#num2{
+    width: 70px;
+    height: 35px;
+    margin-right: 1rem;
+    font-size: 30px;
+}
+.equal{
+    width: 30px;
+    height: 35px;
+    font-size: 30px;
+}
+
+#outcme{
+    width: 70px;
+    height: 35px;
+    margin-right: 1rem;
+    font-size: 30px;
+}
+#btn{
+    width: 50px;
+    height: 35px;
+
+}

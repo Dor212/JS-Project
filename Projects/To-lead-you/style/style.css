@@ -1,0 +1,105 @@
+@import url(https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+#container{
+    width: 1920px;
+    height: 1080px;
+}
+#container-img{
+    background-image: url(/Projects/To-lead-you/images/Path\ 15.png);
+    height: 743px;
+    object-fit: cover;
+}
+section{
+    text-align: center;
+    padding: 300px;
+} 
+h1 {
+        font: normal normal bold 86px/113px Assistant;
+        color: #D3E10E;
+    }
+
+    p {
+        font: normal normal normal 20px/26px Assistant;
+        color: #F9F9F9;
+    }
+#form{
+    direction: rtl;
+    text-align: center;
+    display: flex;
+    width: 1000px;
+    margin: auto;
+
+}
+.form-title{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin-left: 15px;
+}
+label{
+    font: normal normal bold 10px/14px Assistant;
+    color: #011560;
+}
+input{
+    width: 418px;
+    height: 50px;
+    background: #F6F6F6 0% 0% no-repeat padding-box;
+    border: 0;
+    border-bottom: 1px solid #D3E10E ;
+}
+input[type="submit"]{
+    width: 166px;
+    height: 50px;
+    background: #D3E10E 0% 0% no-repeat padding-box;
+    font: normal normal bold 22px/30px Assistant;
+    letter-spacing: 0.33px;
+    color: #011560;
+    margin: 20px;
+    border: 0;
+}
+@media(max-width:800px){
+    #container{
+        width: 370px;
+        height: 657px;
+    }
+    #container-img{
+        height: 350px;
+        background-repeat:no-repeat ;
+        background-size: 370px 300px;
+    }
+    section{
+        height: 40vh;
+        padding: 40px;
+
+    }
+    h1{
+    font: normal normal bold 28px/30px Assistant;
+    }
+    p{
+        font: normal normal normal 14px/16px Assistant;
+    }
+    #form{
+        width: 300px;
+        height: 220px;
+        display: flex;
+        flex-direction: column;
+        margin: 0px auto;
+    }
+    .form-title{
+        margin-left: 0;
+    }
+    label{
+        font: normal normal bold 10px/14px Assistant;
+    }
+    input[type='submit']{
+        border: 0;
+        margin: 0;
+        width: 350px;
+}
+
+}

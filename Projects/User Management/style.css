@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Heebo:wght@100..900&family=Rubik+Doodle+Shadow&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #E0FBE2;
+}
+#main-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #028391;
+    color: azure;
+    width: 70vw;
+    margin: 0 auto;
+    margin-top: 3rem;
+    border: 2px solid #028391;
+    padding: 10px;
+    border-radius: 25px;
+    padding: 1rem;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+#main-container h2 {
+    color: #F6DCAC;
+}
+#register{
+    display: flex;
+    gap: 2em;
+    align-items: end;
+    margin: auto;
+    margin-bottom: 20px;
+}
+#formLogin{
+    display: flex;
+    gap: 2em;
+    align-items: end;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.form-title{
+    margin: auto;
+    margin-bottom: 2rem;
+
+}
+.form-control{
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+}
+.form-title-login{
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+}
+.form-control-login{
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+}
+table {
+    border-collapse: collapse;
+    width: 70%;
+    margin: 0 auto;
+    
+}
+#table-container{
+    text-align: center;
+    color: #01204E;
+    margin-top: 3%;
+}
+#table-container h2 {
+    margin: 1rem;
+}
+th,
+td {
+    border: 1px solid #bbb;
+    padding: 8px;
+    text-align: right;
+    background-color: #F6DCAC;
+}
+
+th {
+    background-color: #F6DCAC;
+}
+#loginBtn{
+    background-color: #028391;
+}
+
+@media (max-width: 800px){
+    #main-container {
+    display: flex;
+    flex-direction: column;
+    background: #2A629A;
+    width: 40vw;
+            
+        }
+    #register {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    }
+    .form-control {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+    width: 100%;
+    }
+    #formLogin{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    }
+    .form-control-login{
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+    width: 100%;
+    }
+
+}
