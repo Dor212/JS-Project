@@ -1,47 +1,84 @@
-#calcDiv{
-    background-color: blue;
-    width: 450px;
-    height: 40px;
-    display: flex;
-    flex-direction :row;  
-    margin: 0 auto; 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
 }
-#selectGame{
-    width: 450px;
-    display: flex;
-    flex-direction: column;
+#container {
+    max-width: 800px;
     margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-#num1{
-    width: 70px;
-    height: 35px;
-    margin-right: 1rem;
-    font-size: 30px;
+h1{
+    color: #007bff;
 }
-#oper{
-    width: 35px;
-    height: 35px;
+#selectGame {
+    margin-bottom: 20px;
 }
-#num2{
-    width: 70px;
-    height: 35px;
-    margin-right: 1rem;
-    font-size: 30px;
+label {
+    font-weight: bold;
 }
-.equal{
-    width: 30px;
-    height: 35px;
-    font-size: 30px;
+select,
+input[type="number"],
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
 }
-
-#outcme{
-    width: 70px;
-    height: 35px;
-    margin-right: 1rem;
-    font-size: 30px;
+select:focus,
+input[type="number"]:focus,
+button:focus {
+    border-color: #007bff;
+    outline: none;
 }
-#btn{
-    width: 50px;
-    height: 35px;
-
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
+button:hover {
+    background-color: #0056b3;
+}
+#calcDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+#calcDiv div,
+#calcDiv input[type="number"],
+#calcDiv button {
+    flex: 1;
+    margin: 0 5px;
+}
+#calcDiv div {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+#myTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+#myTable th,
+#myTable td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+#myTable th {
+    background-color: #f8f8f8;
+    font-weight: bold;}

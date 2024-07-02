@@ -3,10 +3,12 @@ const num1 = document.getElementById('num1');
 const selectOperator = document.getElementById('selectOperator');
 const num2 = document.getElementById('num2');
 const outcme = document.getElementById('outcme');
-const startGame = document.getElementById('startGame')
+const startGame = document.getElementById('startGame');
 const btn = document.getElementById('btn');
 const range = document.getElementById('range');
 const oper = document.getElementById('oper');
+
+
 
 const randomNum1 = (max)=>{
     let num1 = Math.random()*(max+1);
@@ -20,28 +22,109 @@ function randomNum3(){
     return Math.floor(Math.random() * (1500-1000 +1))+1000;
 }
 function plus(num1,num2) {
-    let aaa = Number(num1)+Number(num2);
-    let sum = Number(aaa);
-    return sum;
+    const studentSum = outcme.value;
+    let exe = Number(num1)+Number(num2);
+    let sum = Number(exe);
+    let tableBody = document.querySelector("#myTable tbody");
+    let newRow = document.createElement("tr");
+    let cell1 = document.createElement("td");
+    let cell2 = document.createElement("td");
+    let cell3 = document.createElement("td");
+    let cell4 = document.createElement("td");
+    cell1.textContent = `${num1} + ${num2}`;
+    cell2.textContent = studentSum;
+    cell3.textContent = sum;
+    newRow.appendChild(cell1);
+    newRow.appendChild(cell2);
+    newRow.appendChild(cell3);
+    newRow.appendChild(cell4);
+    tableBody.appendChild(newRow);
+
+    if (sum == studentSum){
+        cell4.textContent = 10 ;
+        return sum;
+    } else {
+        cell4.textContent = 0 ;
+        return sum;
+    }
 }
 function minus(num1,num2) {
+    const studentSum = outcme.value;
     let exe = Number(num1)-Number(num2);
     let sum = Number(exe);
-    return sum;
+    let tableBody = document.querySelector("#myTable tbody");
+    let newRow = document.createElement("tr");
+    let cell1 = document.createElement("td");
+    let cell2 = document.createElement("td");
+    let cell3 = document.createElement("td");
+    let cell4 = document.createElement("td");
+    cell1.textContent = `${num1} - ${num2}`;
+    cell2.textContent = studentSum;
+    cell3.textContent = sum;
+    newRow.appendChild(cell1);
+    newRow.appendChild(cell2);
+    newRow.appendChild(cell3);
+    newRow.appendChild(cell4);
+    tableBody.appendChild(newRow);
+    if (sum == studentSum){
+        cell4.textContent = 10 ;
+        return sum;
+    } else {
+        cell4.textContent = 0 ;
+        return sum;
+    }
 }
 function Dual(num1,num2) {
+    const studentSum = outcme.value;
     let exe = Number(num1)*Number(num2);
     let sum = Number(exe);
-    return sum;
+    let tableBody = document.querySelector("#myTable tbody");
+    let newRow = document.createElement("tr");
+    let cell1 = document.createElement("td");
+    let cell2 = document.createElement("td");
+    let cell3 = document.createElement("td");
+    let cell4 = document.createElement("td");
+    cell1.textContent = `${num1} * ${num2}`;
+    cell2.textContent = studentSum;
+    cell3.textContent = sum;
+    newRow.appendChild(cell1);
+    newRow.appendChild(cell2);
+    newRow.appendChild(cell3);
+    newRow.appendChild(cell4);
+    tableBody.appendChild(newRow);
+    if (sum == studentSum){
+        cell4.textContent = 10 ;
+        return sum;
+    } else {
+        cell4.textContent = 0 ;
+        return sum;
+    }
 }
 function division(num1,num2) {
+    const studentSum = outcme.value;
     let exe = Number(num1)/Number(num2);
     let sum = Number(exe);
-    return sum;
-}
-function test(ans, sum) {
-    sum = outcme.value;
-    ans = 
+    let tableBody = document.querySelector("#myTable tbody");
+    let newRow = document.createElement("tr");
+    let cell1 = document.createElement("td");
+    let cell2 = document.createElement("td");
+    let cell3 = document.createElement("td");
+    let cell4 = document.createElement("td");
+    cell1.textContent = `${num1} / ${num2}`;
+    cell2.textContent = studentSum;
+    cell3.textContent = sum;
+    newRow.appendChild(cell1);
+    newRow.appendChild(cell2);
+    newRow.appendChild(cell3);
+    newRow.appendChild(cell4);
+    tableBody.appendChild(newRow);
+    if (sum == studentSum){
+        cell4.textContent = 10 ;
+        return sum;
+    } else {
+        cell4.textContent = 0 ;
+        return sum;
+    }
 }
 
 startGame.addEventListener('click', ()=>{
@@ -87,19 +170,19 @@ if(selectOperator.value == 'plus'){
 })
 
 btn.addEventListener('click', ()=>{
-/*     if(selectOperator.value == 'plus'){
-let res = plus(num1.value, num2.value);
-outcme.innerHTML= res;
+    if(selectOperator.value == 'plus'){
+    let res = plus(num1.value, num2.value);
+    outcme.value = res;
 } else if (selectOperator.value == 'minus'){
     let diff = minus(num1.value, num2.value);
-    outcme.innerHTML = diff;
+    outcme.value = diff;
 } else if (selectOperator.value == 'Dual'){
-    let dou = Dual(num1.value, num2.value)
-    outcme.innerHTML = dou;
+    let dua = Dual(num1.value, num2.value)
+    outcme.value = dua;
 } else if (selectOperator.value =='division'){
     let divi = division(num1.value, num2.value)
-    outcme.innerHTML = divi; */
-    if (outcme.value ===)
+    outcme.value = divi; 
+}
 })
 
 
