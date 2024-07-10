@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Heebo:wght@100..900&family=Rubik+Doodle+Shadow&display=swap');
+/*  @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Heebo:wght@100..900&family=Rubik+Doodle+Shadow&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -84,9 +84,6 @@ td {
 th {
     background-color: #F6DCAC;
 }
-#loginBtn{
-    background-color: #028391;
-}
 
 @media (max-width: 800px){
     #main-container {
@@ -119,4 +116,104 @@ th {
     width: 100%;
     }
 
+} 
+ */
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Heebo:wght@100..900&family=Rubik+Doodle+Shadow&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #01204E; /* Dark blue background */
+    font-family: 'Assistant', sans-serif;
+    color: azure;
+    line-height: 1.6;
+}
+
+#main-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #2A629A; /* Darker blue container */
+    width: 70vw;
+    margin: 3rem auto;
+    border: 2px solid #2A629A; /* Matching border color */
+    border-radius: 25px;
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px; /* Dark shadow */
+}
+
+#main-container h2 {
+    color: #F6DCAC; /* Light yellow heading */
+}
+
+#register,
+#formLogin {
+    display: flex;
+    gap: 2em;
+    align-items: end;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.form-title,
+.form-title-login {
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+.form-control,
+.form-control-login {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+}
+
+table {
+    border-collapse: collapse;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    color: #01204E; /* Dark blue text */
+}
+
+table th,
+table td {
+    border: 1px solid #bbb;
+    padding: 8px;
+    text-align: right;
+    background-color: #F6DCAC; /* Light yellow background */
+} 
+#table-container {
+    text-align: center;
+    color: #F6DCAC;
+    margin-top: 3%;
+}
+
+#table-container h2 {
+    margin: 1rem;
+}
+
+th {
+    background-color: #F6DCAC; /* Light yellow header */
+}
+
+@media (max-width: 800px) {
+    #main-container {
+        width: 90vw;
+    }
+
+    #register,
+    #formLogin {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .form-control,
+    .form-control-login {
+        margin-right: 0;
+        width: 100%;
+    }
 }

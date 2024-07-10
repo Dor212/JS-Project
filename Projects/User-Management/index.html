@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Management</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" async defer ></script>
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./script/script.js" async defer ></script>
 </head>
 <body dir="rtl">
     <div id="main">
@@ -35,6 +35,19 @@
                 <input type="submit" id="btn" required>
             </div>
         </form>
+        <form id="editForm" style="display: none;">
+            <input type="hidden" id="editIndex" name="editIndex">
+            שם פרטי 
+            <input type="text" id="editFName" name="editFName"><br>
+            שם משפחה 
+            <input type="text" id="editLName" name="editLName"><br>
+            דוא"ל 
+            <input type="email" id="editEmail" name="editEmail"><br>
+            סיסמא 
+            <input type="password" id="editPassword" name="editPassword"><br>
+            <button type="submit">שמור</button>
+            <button type="button" onclick="cancelEdit()">Cancel</button>
+        </form>
             <div class="form-title-login">
                 <h2>התחברות</h2>
             </div>
@@ -48,7 +61,7 @@
                 <input type="password" id="passwordLogin" required>
             </div>
             <div class="form-control-login">
-                <input type="submit" id="btnLogin" value="התחבר" required>
+                <button type="button" id="btnLogin">התחבר</button>
             </div>
         </form>
     </div>
