@@ -168,7 +168,6 @@ header {
 }
 .main {
     width: 1130px;
-    /* min-width: 95%; */
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -436,7 +435,7 @@ input{
     background: #191919;
     color: #00abf0;
 }
-#textArea {
+textArea {
     width: 400px;
     height: 200px;         
     resize: none;
