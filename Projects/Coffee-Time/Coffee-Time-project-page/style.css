@@ -145,3 +145,155 @@ header {
 #footer>p {
     padding: 1em;
 }
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    header {
+        padding: 15px 5%;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .project-title {
+        padding: 50px 0;
+    }
+
+    .project-title h2 {
+        font-size: 36px;
+    }
+
+    .project-title p {
+        font-size: 16px;
+        margin-bottom: 2rem;
+    }
+
+    .btn-box {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .btn-box a {
+        width: 90%;
+        margin: 5px 0;
+    }
+
+    .skills {
+        height: auto;
+        margin: 20px 0;
+    }
+
+    .skills a {
+        font-size: 50px;
+    }
+
+    .img {
+        padding: 50px 0;
+    }
+
+    .img-page {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    #footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+@media (min-width: 601px) and (max-width: 900px) {
+    body {
+        font-size: 16px;
+        padding: 20px;
+    }
+
+    header {
+        padding: 20px 10%;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .project-title {
+        padding: 80px 0;
+    }
+
+    .project-title h2 {
+        font-size: 48px;
+    }
+
+    .project-title p {
+        font-size: 18px;
+    }
+
+    .btn-box {
+        width: 90%;
+        justify-content: space-around;
+    }
+
+    .btn-box a {
+        width: 45%;
+    }
+
+    .skills {
+        height: auto;
+    }
+
+    .skills a {
+        font-size: 80px;
+    }
+
+    .img-page {
+        width: 90%;
+    }
+
+    #footer {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+@media (min-width: 901px) {
+    body {
+        font-size: 18px;
+        padding: 30px;
+    }
+
+    header {
+        padding: 20px 10%;
+    }
+
+    .project-title {
+        padding: 100px 0;
+    }
+
+    .project-title h2 {
+        font-size: 75px;
+    }
+
+    .project-title p {
+        font-size: 22px;
+    }
+
+    .btn-box {
+        width: 500px;
+    }
+
+    .skills a {
+        font-size: 100px;
+    }
+
+    .img-page {
+        width: 1130px;
+    }
+
+    #footer {
+        justify-content: space-between;
+    }
+}
