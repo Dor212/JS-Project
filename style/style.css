@@ -435,7 +435,7 @@ input{
     background: #191919;
     color: #00abf0;
 }
-textArea {
+textarea {
     width: 400px;
     height: 200px;         
     resize: none;
@@ -623,7 +623,7 @@ input[type="checkbox"]{
     .forme lable {
         width: 90vw;
     }
-    textArea {
+    textarea {
         width: 150px;
     }
 }
@@ -726,7 +726,7 @@ input[type="checkbox"]{
         font-size: 5rem;
         margin-bottom: 2rem;
     }
-    textArea {
+    textarea {
         width: 300px;
     }
     .forme{
