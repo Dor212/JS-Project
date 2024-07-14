@@ -624,7 +624,7 @@ input[type="checkbox"]{
     .forme lable {
         width: 90vw;
     }
-    #textArea {
+    textArea {
         width: 150px;
     }
 }
@@ -727,8 +727,8 @@ input[type="checkbox"]{
         font-size: 5rem;
         margin-bottom: 2rem;
     }
-    #textArea {
-        width: 150px;
+    textArea {
+        width: 300px;
     }
     .forme{
         align-items: center;
