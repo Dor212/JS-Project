@@ -24,26 +24,30 @@ header {
     align-items: center;
     z-index: 100;
 }
+
 .logo {
     font-size: 25px;
     color: #ededed;
     text-decoration: none;
     font-weight: 600;
 }
-.project-title{
+
+.project-title {
     width: 100%;
     padding: 100px 0px;
-    background:url(/images/home.jpg) no-repeat;
+    background: url(/images/home.jpg) no-repeat;
     align-items: center;
     display: flex;
     flex-direction: column;
 }
+
 .project-title h2 {
     color: #777;
     font-size: 75px;
     text-transform: capitalize;
     margin-bottom: 2rem;
 }
+
 .project-title p {
     color: #ededed;
     letter-spacing: 2px;
@@ -51,20 +55,21 @@ header {
     text-transform: capitalize;
     margin-bottom: 4rem;
 }
-.project-title .btn-box{
+
+.project-title .btn-box {
     display: flex;
     justify-content: space-between;
     width: 500px;
-    height: 50px;
+    height: 100px;
 }
-    
+
 .btn-box a {
     position: relative;
     display: inline-flex;
     justify-content: center;
     align-items: center;
     width: 200px;
-    height: 100%;
+    height: 50%;
     background: #00abf0;
     border: 2px solid #00abf0;
     border-radius: 8px;
@@ -77,24 +82,24 @@ header {
     overflow: hidden;
     transition: .5s;
 }
-    
+
 .btn-box a:hover {
     color: #00abf0;
 }
-    
+
 .btn-box a:nth-child(2) {
     background: transparent;
     color: #00abf0;
 }
-    
+
 .btn-box a:nth-child(2):hover {
     background: #00abf0;
 }
-    
+
 .btn-box a:nth-child(2)::before {
     color: #00abf0;
 }
-    
+
 .btn-box a::before {
     content: '';
     position: absolute;
@@ -106,11 +111,12 @@ header {
     z-index: -1;
     transition: .5s;
 }
-    
+
 .btn-box a:hover::before {
     width: 100%;
 }
-.skills{
+
+.skills {
     width: 100%;
     height: 100px;
     margin: 0 auto;
@@ -118,17 +124,20 @@ header {
     align-items: center;
     justify-content: center;
 }
-.skills a{
+
+.skills a {
     margin: 2rem;
     align-items: center;
     font-size: 100px;
     color: #00abf0;
 }
+
 .img {
     width: 100%;
     padding: 100px 0px;
     background: #101010;
 }
+
 .img-page {
     width: 1130px;
     min-width: 95%;
@@ -137,11 +146,169 @@ header {
     align-items: center;
     justify-content: center;
 }
+
 #footer {
     color: azure;
     display: flex;
     justify-content: space-between;
 }
+
 #footer>p {
     padding: 1em;
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    header {
+        padding: 15px 5%;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .project-title {
+        padding: 50px 0;
+    }
+
+    .project-title h2 {
+        font-size: 36px;
+    }
+
+    .project-title p {
+        font-size: 16px;
+        margin-bottom: 2rem;
+    }
+
+    .btn-box {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .btn-box a {
+        width: 60%;
+        height: 300px;
+        margin: 5px 0;
+    }
+
+    .skills {
+        height: auto;
+        margin: 20px 0;
+    }
+
+    .skills a {
+        font-size: 50px;
+    }
+
+    .img {
+        padding: 50px 0;
+    }
+
+    .img-page {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    #footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    body {
+        font-size: 16px;
+        padding: 20px;
+    }
+
+    header {
+        padding: 20px 10%;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .project-title {
+        padding: 80px 0;
+    }
+
+    .project-title h2 {
+        font-size: 48px;
+    }
+
+    .project-title p {
+        font-size: 18px;
+    }
+
+    .btn-box {
+        width: 90%;
+        justify-content: space-around;
+    }
+
+    .btn-box a {
+        width: 45%;
+    }
+
+    .skills {
+        height: auto;
+    }
+
+    .skills a {
+        font-size: 80px;
+    }
+
+    .img-page {
+        width: 90%;
+    }
+
+    #footer {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 901px) {
+    body {
+        font-size: 18px;
+        padding: 30px;
+    }
+
+    header {
+        padding: 20px 10%;
+    }
+
+    .project-title {
+        padding: 100px 0;
+    }
+
+    .project-title h2 {
+        font-size: 75px;
+    }
+
+    .project-title p {
+        font-size: 22px;
+    }
+
+    .btn-box {
+        width: 500px;
+    }
+
+    .skills a {
+        font-size: 100px;
+    }
+
+    .img-page {
+        width: 1130px;
+    }
+
+    #footer {
+        justify-content: space-between;
+    }
 }
