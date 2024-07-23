@@ -10,7 +10,7 @@
     height: 1080px;
 }
 #container-img{
-    background-image: url(/Projects/To-lead-you/images/Path\ 15.png);
+    background-image: url(.././images/Path\ 15.png);
     height: 743px;
     object-fit: cover;
 }
